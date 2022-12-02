@@ -549,7 +549,7 @@ exports.pullRemote = function(){
         //const distroURL = 'https://gist.githubusercontent.com/xnooztvFR/85b0066bb03e41be4c01f7a574f8494f/raw/'
         const opts = {
             url: distroURL,
-            timeout: 2500
+            timeout: 995000
         }
         const distroDest = path.join(ConfigManager.getLauncherDirectory(), 'distribution.json')
         request(opts, (error, resp, body) => {

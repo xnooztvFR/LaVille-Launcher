@@ -1473,7 +1473,7 @@ function populateReleaseNotes(){
             }
 
         },
-        timeout: 2500
+        timeout: 925000
     }).catch(err => {
         settingsAboutChangelogText.innerHTML = 'Échec du chargement des notes de version.'
     })
@@ -1537,7 +1537,7 @@ function populateSettingsUpdateInformation(data){
             settingsUpdateButtonStatus('Téléchargement..', true)
         }
     } else {
-        settingsUpdateTitle.innerHTML = 'Vous utilisez la dernière version'
+        settingsUpdateTitle.innerHTML = 'Vous utilisez la dernière version :)'
         settingsUpdateChangelogCont.style.display = 'none'
         populateVersionInformation(remote.app.getVersion(), settingsUpdateVersionValue, settingsUpdateVersionTitle, settingsUpdateVersionCheck)
         settingsUpdateButtonStatus('Vérifier les mises à jour', false, () => {

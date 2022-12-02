@@ -1,17 +1,15 @@
 # CHANGELOG.md
 
-## 1.0.1 (stable)
+## 1.0.4 (stable)
 
 Fonctionnalités:
 
-  - Lorem ipsum dolor sit amet. -> [95f32s5b](http://www.google.com)
-  - Lorem ipsum dolor sit amet.
-  - Lorem ipsum dolor sit amet.
+  - Modification de la taille de texte "JOUEURS EN LIGNE"
 
 Bugfixes:
 
-  - Lorem ipsum dolor sit amet.
+  - Plusieurs bugs corrigé.
 
 Sécurité:
 
-  - Lorem ipsum dolor sit amet.
+  - A

@@ -3181,7 +3181,7 @@ input:checked + .toggleSwitchSlider:before {
 
 /* Style for a general label on the bottom of the landing view. */
 .bot_label {
-    font-size: 9px;
+    font-size: 13px;
     letter-spacing: 1px;
     font-weight: bold;
     text-shadow: 0px 0px 0px #bebcbb;
@@ -3203,13 +3203,13 @@ input:checked + .toggleSwitchSlider:before {
 /* Maintains maximum width on the status bar. */
 #server_status_wrapper {
     display: inline-flex;
-    width: 75px;
+    width: 155px;
 }
 
 /* Span which displays the player count of the selected server. */
 #player_count {
     color: #949494;
-    font-size: 8px;
+    font-size: 11px;
     font-weight: 900;
     text-shadow: 0px 0px 20px #949494;
     margin-left: 10px;

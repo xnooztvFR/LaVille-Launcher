@@ -231,7 +231,7 @@ const refreshServerStatus = async function(fade = false){
 
         const servStat = await getServerStatus(47, serverURL.hostname, Number(serverURL.port))
         console.log(servStat)
-        pLabel = 'JOUEURS'
+        pLabel = 'JOUEURS EN LIGNE'
         pVal = servStat.players.online + '/' + servStat.players.max
 
     } catch (err) {
@@ -709,7 +709,7 @@ function dlAsync(login = true){
                     proc.stdout.on('data', tempListener)
                     proc.stderr.on('data', gameErrorListener)
 
-                    setLaunchDetails('C\'est OK. Profitez du serveur!')
+                    setLaunchDetails('C\'est bon!<br>Bon jeu!')
 
                     // Init Discord Hook
                     const distro = DistroManager.getDistribution()
@@ -1142,7 +1142,7 @@ function loadNews(){
                     articles
                 })
             },
-            timeout: 2500
+            timeout: 925000
         }).catch(err => {
             resolve({
                 articles: null
