@@ -1,15 +1,15 @@
 # CHANGELOG.md
 
-## 1.0.4 (stable)
+## 1.0.7 (stable)
 
 Fonctionnalités:
 
-  - Modification de la taille de texte "JOUEURS EN LIGNE"
+  - ...
 
 Bugfixes:
 
-  - Plusieurs bugs corrigé.
+  - Potentiel fix pour l'auto updater.
 
 Sécurité:
 
-  - A
+  - ...

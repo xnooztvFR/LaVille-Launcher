@@ -43,11 +43,11 @@ if(!isDev){
     ipcRenderer.on('autoUpdateNotification', (event, arg, info) => {
         switch(arg){
             case 'checking-for-update':
-                loggerAutoUpdater.log('Vérification des mise à jour..')
-                settingsUpdateButtonStatus('Vérification des mise à jour..', true)
+                loggerAutoUpdater.log('Vérification d\'une mise à jour..')
+                settingsUpdateButtonStatus('Vérification d\'une mise à jour..', true)
                 break
             case 'update-available':
-                loggerAutoUpdaterSuccess.log('Nouvelle mise à jour disponible', info.version)
+                loggerAutoUpdaterSuccess.log('Une nouvelle mise à jour est disponible : ', info.version)
                 
                 if(process.platform === 'darwin'){
                     info.darwindownload = `https://github.com/xnooztvFR/LaVille-Launcher/releases/download/v${info.version}/Helios-Launcher-setup-${info.version}${process.arch === 'arm64' ? '-arm64' : '-x64'}.dmg`
@@ -66,7 +66,7 @@ if(!isDev){
                 showUpdateUI(info)
                 break
             case 'update-not-available':
-                loggerAutoUpdater.log('Aucune nouvelle mise à jour trouvée.')
+                loggerAutoUpdater.log('Aucune nouvelle mise à jour disponible.')
                 settingsUpdateButtonStatus('Vérifier les mises à jour')
                 break
             case 'ready':

@@ -1523,7 +1523,7 @@ function settingsUpdateButtonStatus(text, disabled = false, handler = null){
  */
 function populateSettingsUpdateInformation(data){
     if(data != null){
-        settingsUpdateTitle.innerHTML = `Nouvelle version ${isPrerelease(data.version) ? 'bêta' : 'stable'} disponible`
+        settingsUpdateTitle.innerHTML = `Nouvelle version : ${isPrerelease(data.version) ? 'bêta' : 'stable'} disponible`
         settingsUpdateChangelogCont.style.display = null
         settingsUpdateChangelogTitle.innerHTML = data.releaseName
         settingsUpdateChangelogText.innerHTML = data.releaseNotes
@@ -1534,10 +1534,10 @@ function populateSettingsUpdateInformation(data){
                 shell.openExternal(data.darwindownload)
             })
         } else {
-            settingsUpdateButtonStatus('Téléchargement..', true)
+            settingsUpdateButtonStatus('Téléchargement en cours..', true)
         }
     } else {
-        settingsUpdateTitle.innerHTML = 'Vous utilisez la dernière version :)'
+        settingsUpdateTitle.innerHTML = 'Vous utilisez la dernière version !'
         settingsUpdateChangelogCont.style.display = 'none'
         populateVersionInformation(remote.app.getVersion(), settingsUpdateVersionValue, settingsUpdateVersionTitle, settingsUpdateVersionCheck)
         settingsUpdateButtonStatus('Vérifier les mises à jour', false, () => {
