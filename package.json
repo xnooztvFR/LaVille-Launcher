@@ -1,6 +1,6 @@
 {
   "name": "laville",
-  "version": "1.0.7",
+  "version": "v1.0.8",
   "productName": "La Ville",
   "description": "Launcher de La Ville.",
   "author": "xnooztvFR",
@@ -9,11 +9,11 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "start": "set ELECTRON_IS_DEV=0 && electron .",
-    "dist": "set ELECTRON_IS_DEV=0 && electron-builder build",
-    "dist:win": "set ELECTRON_IS_DEV=0 && npm run dist -- -w",
-    "dist:mac": "set ELECTRON_IS_DEV=0 && npm run dist -- -m",
-    "dist:linux": "set ELECTRON_IS_DEV=0 && npm run dist -- -l",
+    "start": "electron .",
+    "dist": "electron-builder build",
+    "dist:win": "npm run dist -- -w",
+    "dist:mac": "npm run dist -- -m",
+    "dist:linux": "npm run dist -- -l",
     "lint": "eslint --config .eslintrc.json ."
   },
   "engines": {
