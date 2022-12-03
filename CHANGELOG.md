@@ -1,6 +1,6 @@
 # CHANGELOG.md
 
-## 1.0.7 (stable)
+## v1.1.2 (stable)
 
 Fonctionnalités:
 
@@ -8,7 +8,7 @@ Fonctionnalités:
 
 Bugfixes:
 
-  - Potentiel fix pour l'auto updater.
+  - Fixed Azure Client ID.
 
 Sécurité:
 
